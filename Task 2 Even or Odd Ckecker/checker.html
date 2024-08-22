@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checker</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>Number:</td>
+        <td>
+    <input type="text" id="text_n" placeholder="input number">
+</td>
+</tr>
+    <tr>
+    <td
+    colspan="2"><input type="button" id="butn" value="check" onclick="data()"></td>
+</tr>
+</table>
+
+    <script src="script.js">
+
+        function data()
+        {
+        
+            var n=parseInt(document.getElementById("text_n").value);
+        
+         if(n%2==0)
+         {
+           document.write(n+" number is Even");
+         }
+         else
+         {
+                 document.write(n+" number is Odd");
+         }
+        }  
+        
+
+        
+    </script>
+    
+</body>
+</html>
