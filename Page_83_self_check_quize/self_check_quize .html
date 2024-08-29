@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Self check quize</title>
+</head>
+<body>
+    <script>
+
+        // num1
+   const q = '1';
+switch (q) {
+case '1':
+answer = "one";
+[ 84 ]
+break;
+case 1:
+answer = 1;
+break;
+case 2:
+answer = "this is the one";
+break;
+default:
+answer = "not working";
+}
+console.log(answer);
+// The asnwer here is one
+
+
+// num2
+const q1 = 1;
+switch (q1) {
+case '1':
+answer = "one";
+case 1:
+answer = 1;
+case 2:
+answer = "this is the one";
+break;
+default:
+answer = "not working";
+}
+console.log(answer);
+// num3
+let login = false;
+let outputHolder = "";
+let userOkay = login ? outputHolder = "logout" : outputHolder =
+"login";
+console.log(userOkay);
+// num4
+const userNames = ["Mike", "John", "Larry"];
+const userInput = "John";
+let htmlOutput = "";
+if (userNames.indexOf(userInput) > -1) {
+htmlOutput = "Welcome, that is a user";
+[ 85 ]
+} else {
+htmlOutput = "Denied, not a user ";
+}
+console.log(htmlOutput + ": " + userInput);
+// num5
+let myTime = 9;
+let output;
+if (myTime >= 8 && myTime < 12) {
+output = "Wake up, it's morning";
+} else if (myTime >= 12 && myTime < 13) {
+output = "Go to lunch";
+} else if (myTime >= 13 && myTime <= 16) {
+output = "Go to work";
+} else if (myTime > 16 && myTime < 20) {
+output = "Dinner time";
+} else if (myTime >= 22) {
+output = "Time to go to sleep";
+} else {
+output = "You should be sleeping";
+}
+console.log(output);
+// num6
+let a = 5;
+let b = 10;
+let c = 20;
+let d = 30;
+console.log(a > b || b > a);
+console.log(a > b && b > a);
+console.log(d > b || b > a);
+console.log(d > b && b > a);
+
+// num7
+let val = 100;
+let message = (val > 100) ? `${val} was greater than 100` :
+`${val} was LESS or Equal to 100`;
+console.log(message);
+let check = (val % 2) ? `Odd` : `Even`;
+check = `${val} is ${check}`;
+console.log(check);
+
+    </script>
+
+
+</body>
+</html>
