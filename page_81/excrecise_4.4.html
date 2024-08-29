@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+// javascript = "";
+// Step 1: Generate random number between 0-5
+let randomNumber = Math.floor(Math.random() * 6);
+
+// Step 2: Prompt user for input
+let userInput = prompt("Ask me any question");
+
+// Step 3: Create responses using switch statement
+let response = "";
+switch(randomNumber) {
+  case 0:
+    response = "Yes, definitely.";
+    break;
+  case 1:
+    response = "It is uncertain, try again later.";
+    break;
+  case 2:
+    response = "No way, Jose!";
+    break;
+  case 3:
+    response = "Ask again later.";
+    break;
+  case 4:
+    response = "Outlook not so good.";
+    break;
+  case 5:
+    response = "Without a doubt.";
+    break;
+}
+
+// Step 4: Combine user input and response
+let endResponse = `You asked: "${userInput}" \nMy answer is: ${response}`;
+
+// Step 5: Output final response to console
+console.log(endResponse);
+
+    </script>
+
+
+</body>
+</html>
