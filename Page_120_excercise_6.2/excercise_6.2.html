@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excercise 6.2</title>
+</head>
+<body>
+    <script>
+        const description = ["amazing","playfull","joyous","humble"];
+
+        function askName(){
+          const  question = prompt("what's your name? ");
+         const valuedescription =  Math.floor(Math.random() *description.length);
+         console.log(description[valuedescription] + " " + question );
+        }
+        askName();
+         
+
+
+    </script>
+</body>
+</html>
