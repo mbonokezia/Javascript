@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excercise 6.5</title>
+</head>
+<body>
+     <script>
+        let val = "1000";
+
+(function () {
+    let val = "100"; // local scope variable
+    console.log(val);
+})();
+
+let result = (function () {
+    let val = "Mary";
+    return val;
+})();
+console.log(result);
+console.log(val);
+
+(function (val) {
+    console.log(`My name is ${val}`);
+})("Mary");
+     </script>
+</body>
+</html>
