@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SELF CHECK QUIZE</title>
+</head>
+<body>
+    <script>
+        var c = "http://www.google.com?id=1000&n=500";
+var e = encodeURIComponent(c);
+// let Ans = decodeURIComponent(e);
+let a = decodeURIComponent(e)
+// b. e.decodeUriComponent()
+// c. decoderURIComponent(c)
+// d. decoderURIComponent(e)
+
+console.log(a);
+
+
+var arr = ["hi","world","hello","hii","hi","hi World","Hi"];
+console.log(arr.lastIndexOf("hi"));
+
+// What is the result of the below code in the console?
+var arr = ["Hi","world","hello","Hii","hi","hi World","Hi"];
+arr.copyWithin(0, 3, 5);
+console.log(arr);
+// 4. What is the result of the below code in the console?
+var arr = ["Hi","world","hello","Hii","hi","hi World","Hi"];
+const arr2 = arr.filter((element,index)=>{
+const ele2 = element.substring(0, 2);
+return (ele2 == "hi");
+});
+console.log(arr2);
+
+
+
+    </script>
+</body>
+</html>
